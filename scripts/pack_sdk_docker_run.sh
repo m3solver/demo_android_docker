@@ -2,7 +2,7 @@
 set -xeuo pipefail
 
 docker run \
-	-it --rm \
+	--rm \
 	-v "$PWD":/application \
 	kjgeorge/android-sdk-build \
     sh -c "$@"
